@@ -16,153 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap" rel="stylesheet">
 
+    <link rel="stylesheet" href="style.css">
+
     <title>Frontend Mentor | Clipboard landing page</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-
-        font-family: 'Bai Jamjuree', sans-serif;
-        font-weight: 400;
-
-        --strong-cyan: hsl(171, 66%, 44%);
-        --light-blue: hsl(233, 100%, 69%);
-        --dark-grayish-blue: hsl(210, 10%, 33%);
-        --grayish-blue: hsl(201, 11%, 66%);
-        --footer-color: hsl(220, 1%, 97%);
-      }
-
-      body {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-      }
-
-      .section {
-        padding: 50px 0;
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        gap: 15px;
-      }
-
-      .title {
-        color: var(--dark-grayish-blue);
-        font-weight: 600;
-      }
-
-      h2.title {
-        font-size: 1.7rem;
-      }
-
-      h3.title {
-        font-size: 1.5rem;
-      }
-
-      .paragraph {
-        color: var(--grayish-blue);
-        font-size: .8rem;
-        width: 470px;
-        text-align: center;
-      }
-
-      /* BUTTON */
-
-      .button {
-        padding: 10px 20px;
-        border-radius: 200px;
-        border: none;
-        font-size: .8rem;
-        color: white;
-      }
-
-      .ios-button {
-        background-color: var(--strong-cyan);
-      }
-
-      .mac-button {
-        background-color: var(--light-blue);
-      }
-
-      .button-container {
-        display: flex;
-        gap: 10px;
-        padding-top: 20px;
-      }
-
-      /*  */
-
-      .header {
-        background-image: url("./images/bg-header-desktop.png");
-      }
-
-      .header img {
-        height: 75px;
-        width: 75px;
-      }
-
-      .devices-img {
-        width: 100%;
-      }
-
-      .logo-containers {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-      }
-
-      .logo-containers img {
-        width: 100px;
-        height: 100%;
-      }
-
-      .footer {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-
-        background-color: var(--footer-color);
-      }
-      
-      .footer-grid-container {
-        display: grid;
-        grid-template-columns: 1fr 3fr 1fr;
-        gap: 100px;
-        align-items: center;
-        padding: 20px 30px;
-        width: 100%;
-      }
-
-      .footer-logo {
-        width: 50px;
-      }
-
-      .footer-links-container {
-        display: grid;
-        grid-template-columns:  1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-auto-flow: column;
-        gap: 10px 15px;
-      }
-
-      .footer-link {
-        color: var(--dark-grayish-blue);
-        font-size: 0.7rem;
-      }
-
-      .social-container {
-        display: flex;
-        justify-content: space-between;
-      }
-
-      .social-container img {
-        width: 15px;
-      }
-    </style>
   </head>
   <body>
     <header class="section header">
@@ -187,18 +43,28 @@
         devices. Our Mac and iOS apps will help you organize everything.</p>
     </section>
 
+    <section class="computer-section">
+      <div class="computer-image-container">
+        <img src="images/image-computer.png" alt="">
+      </div>
 
-    Quick Search
+      <div class="computer-text-container">
+        <div class="computer-text">
+          <h2 class="title">Quick Search</h4>
+          <p class="computer-paragraph">Easily search your snippets by content, category, web address, application, and more.</p>
+        </div>
 
-    Easily search your snippets by content, category, web address, application, and more.
+        <div class="computer-text">
+          <h2 class="title">iCloud Sync</h4>
+          <p class="computer-paragraph">Instantly saves and syncs snippets across all your devices.</p>
+        </div>
 
-    iCloud Sync
-
-    Instantly saves and syncs snippets across all your devices.
-
-    Complete History
-
-    Retrieve any snippets from the first moment you started using the app.
+        <div class="computer-text">
+          <h2 class="title">Complete History</h4>
+          <p class="computer-paragraph">Retrieve any snippets from the first moment you started using the app.</p>
+        </div>
+      </div>
+    </section>
 
     <section class="section">
       <h3 class="title">Access Clipboard anywhere</h3>
@@ -211,23 +77,29 @@
     </section>
    
 
-    
+    <section class="section">
+      <h2 class="title">Supercharge your workflow</h2>
+      <p class="paragraph">We’ve got the tools to boost your productivity.</p>
+      <div class="workflow-container">
+        <div class="workflow-component">
+          <img src="./images/icon-blacklist.svg" alt="">
+          <h4 class="title">Create blacklists</h4>
+          <p class="workflow-paragraph">Ensure sensitive information never makes its way to your clipboard by excluding certain sources.</p>
+        </div>
 
-    Supercharge your workflow
+        <div class="workflow-component">
+          <img src="./images/icon-text.svg" alt="">
+          <h4 class="title">Plain text snippets</h4>
+          <p class="workflow-paragraph">Remove unwanted formatting from copied text for a consistent look.</p>
+        </div>
 
-    We’ve got the tools to boost your productivity.
-
-    Create blacklists
-
-    Ensure sensitive information never makes its way to your clipboard by excluding certain sources.
-
-    Plain text snippets
-
-    Remove unwanted formatting from copied text for a consistent look.
-
-    Sneak preview
-
-    Quick preview of all snippets on your Clipboard for easy access.
+        <div class="workflow-component">
+          <img src="./images/icon-preview.svg" alt="">
+          <h4 class="title">Sneak preview</h4>
+          <p class="workflow-paragraph">Quick preview of all snippets on your Clipboard for easy access.</p>
+        </div>
+      </div>
+    </section>
 
     <section class="section">
       <div class="logo-containers">
@@ -250,11 +122,6 @@
       </div>
     </section>
 
-    FAQs
-    Contact Us
-    Privacy Policy
-    Press Kit
-    Install Guide
     <footer class="footer">
       <div class="footer-grid-container">
         <img class="footer-logo" src="./images/logo.svg" alt="Clipboard logo">
